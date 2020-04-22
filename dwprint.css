@@ -1,0 +1,54 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 1
+
+   dessertWeb Print Styles
+   Author: 
+   Date:   
+
+   Filename:         dwprint.css
+   Supporting Files: 
+
+*/
+
+
+@media print{
+    html, body {
+        width: 8.5in;
+        height: 11in;
+        margin: 0.5in;
+    }
+    
+    aside{
+        display:hide;
+    }
+    header{
+        display:hide;
+    }
+    h2:last-of-type {
+        page-break-after:always;
+    }
+    
+    h1{
+        size:200%;
+        margin-bottom:.2in;
+        
+    }
+    
+    h2{
+        font-size:150%;
+        margin-top:.5in;
+    }
+    li{
+        line-height:1.5em;
+    }
+    
+    ol{
+        margin-left:.5in;
+        display:decimal;
+    }
+    
+    
+    
+}
